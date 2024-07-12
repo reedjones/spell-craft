@@ -1,7 +1,18 @@
-# spell-craft
 
-![spell craft](/logo.webp "title")
 
+<div align="center">
+  <h1>#SpellCraft </h1>
+  <svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+  <h1 style="-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(273deg, #42d392, #647eff, #E84B3C, #f097d1, #943bee, #F2C511);">Spellcraft</h1>
+    </div>
+  </foreignObject>
+  </svg>
+  <img src="https://github.com/reedjones/spell-craft/raw/main/logo.webp" alt="spellcraft" style="" width="250" />
+</div>
 <div align="center">
 
 [![Build status](https://github.com/reedjones/spell-craft/workflows/build/badge.svg?branch=master&event=push)](https://github.com/reedjones/spell-craft/actions?query=workflow%3Abuild)
