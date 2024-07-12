@@ -1,7 +1,7 @@
 
 
 <div align="center">
-  <h1>#SpellCraft </h1>
+  <h1>#Spellcraft </h1>
   <img src="https://github.com/reedjones/spell-craft/raw/main/logo.webp" alt="spellcraft" style="" width="250" />
 </div>
 <div align="center">
@@ -17,32 +17,10 @@
 [![License](https://img.shields.io/github/license/reedjones/spell-craft)](https://github.com/reedjones/spell-craft/blob/master/LICENSE)
 ![Coverage Report](assets/images/coverage.svg)
 
-SpellCraft CLI is a Python project that generates command-line interfaces (CLIs) from configurations. Each CLI plugin is packaged as a separate module containing a configuration and a list of commands. Our nomenclature revolves around the concept of spells and incantations, where plugins are spells and commands are incantations.
+Spellcraft CLI is a Python project that generates command-line interfaces (CLIs) from configurations. Each CLI plugin is packaged as a separate module containing a configuration and a list of commands. Our nomenclature revolves around the concept of spells and incantations, where plugins are spells and commands are incantations.
 
 </div>
 
-
-# Dynamic CLI Generator
-
-Dynamic CLI Generator is a Python project that generates a command-line
-interface (CLI) from a set of predefined shell commands and their
-configurations. Each CLI plugin is defined in a separate directory,
-making it easy to manage and extend.
-
-## Installation
-
-1.  Clone the repository:
-
-    ``` shell
-    git clone https://github.com/yourusername/dynamic-cli-generator.git
-    cd dynamic-cli-generator
-    ```
-
-2.  Install the required packages:
-
-    ``` shell
-    pip install -r requirements.txt
-    ```
 
 ## Usage
 
@@ -61,13 +39,13 @@ making it easy to manage and extend.
 2.  Generate the CLI:
 
     ``` shell
-    python -m dynamic_cli_generator.cli generate-cli plugins/
+    python -m spellcraft.cli generate-cli plugins/
     ```
 
 3.  Use the generated CLI:
 
     ``` shell
-    python -m dynamic_cli_generator.cli <plugin_command> [arguments]
+    python -m spellcraft.cli <plugin_command> [arguments]
     ```
 
 ## Example
