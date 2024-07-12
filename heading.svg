@@ -1,0 +1,37 @@
+ <svg xmlns="http://www.w3.org/2000/svg">
+   <style>
+
+</style>
+
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+     <svg>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&amp;display=swap');
+  .text {
+  font-family: "Jacquard 24 Charted", system-ui;
+  font-size:10em;
+  fill: url(#gr-simple);
+  font-style: normal;
+  
+}
+
+</style>
+
+  <!-- Gradient -->
+  <linearGradient id="gr-simple" x1="0" y1="0" x2="100%" y2="100%">
+    <stop stop-color="hsl(50, 100%, 70%)" offset="10%"></stop>
+    <stop stop-color="hsl(320, 100%, 50%)" offset="40%"></stop>
+    <stop stop-color="hsl(171, 78%, 50%)" offset="60%"></stop>
+    <stop stop-color="hsl(44, 82%, 56%)" offset="70%"></stop>
+    <stop stop-color="hsl(97, 100%, 56%)" offset="85%"></stop>
+  </linearGradient>
+
+  <!-- Text -->
+  <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text">
+    Spellcraft
+  </text>
+</svg>
+    </div>
+  </foreignObject>
+  </svg>

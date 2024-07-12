@@ -1,7 +1,12 @@
-# spell-craft
 
-![spell craft](/logo.webp "title")
 
+<div align="center">
+  <h1>#SpellCraft </h1>
+
+ <img src="heading.svg" />
+ 
+  <img src="https://github.com/reedjones/spell-craft/raw/main/logo.webp" alt="spellcraft" style="" width="250" />
+</div>
 <div align="center">
 
 [![Build status](https://github.com/reedjones/spell-craft/workflows/build/badge.svg?branch=master&event=push)](https://github.com/reedjones/spell-craft/actions?query=workflow%3Abuild)
