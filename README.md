@@ -2,9 +2,6 @@
 
 <div align="center">
   <h1>#SpellCraft </h1>
-
- <img src="heading.svg" />
- 
   <img src="https://github.com/reedjones/spell-craft/raw/main/logo.webp" alt="spellcraft" style="" width="250" />
 </div>
 <div align="center">
@@ -23,6 +20,111 @@
 SpellCraft CLI is a Python project that generates command-line interfaces (CLIs) from configurations. Each CLI plugin is packaged as a separate module containing a configuration and a list of commands. Our nomenclature revolves around the concept of spells and incantations, where plugins are spells and commands are incantations.
 
 </div>
+
+
+# Dynamic CLI Generator
+
+Dynamic CLI Generator is a Python project that generates a command-line
+interface (CLI) from a set of predefined shell commands and their
+configurations. Each CLI plugin is defined in a separate directory,
+making it easy to manage and extend.
+
+## Installation
+
+1.  Clone the repository:
+
+    ``` shell
+    git clone https://github.com/yourusername/dynamic-cli-generator.git
+    cd dynamic-cli-generator
+    ```
+
+2.  Install the required packages:
+
+    ``` shell
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1.  Prepare your plugins:
+
+    -   Each plugin should have its own directory under the
+        <span class="title-ref">plugins</span> folder.
+    -   Each plugin directory should contain a
+        <span class="title-ref">commands.txt</span> file with the shell
+        commands.
+    -   Optionally, include a configuration file
+        (<span class="title-ref">commands.json</span> or
+        <span class="title-ref">commands.yaml</span>) for command
+        arguments.
+
+2.  Generate the CLI:
+
+    ``` shell
+    python -m dynamic_cli_generator.cli generate-cli plugins/
+    ```
+
+3.  Use the generated CLI:
+
+    ``` shell
+    python -m dynamic_cli_generator.cli <plugin_command> [arguments]
+    ```
+
+## Example
+
+Example <span class="title-ref">commands.txt</span> for
+<span class="title-ref">list_files</span> plugin:
+
+``` text
+list_files:ls -la {{ directory }}
+```
+
+Example <span class="title-ref">commands.json</span> for
+<span class="title-ref">list_files</span> plugin:
+
+``` json
+{
+    "list_files": {
+        "arguments": {
+            "directory": {
+                "prompt": "Please enter the directory",
+                "default": "."
+            }
+        }
+    }
+}
+```
+
+Example <span class="title-ref">commands.txt</span> for
+<span class="title-ref">do_something_else</span> plugin:
+
+``` text
+do_something_else:echo {{ message }}
+```
+
+Example <span class="title-ref">commands.yaml</span> for
+<span class="title-ref">do_something_else</span> plugin:
+
+``` yaml
+do_something_else:
+  arguments:
+    message:
+      prompt: "Please enter a message"
+      default: "Hello, World!"
+```
+
+## Contributing
+
+Feel free to contribute by submitting issues or pull requests. Make sure
+to follow the coding standards and write tests for any new features or
+bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
+
+
+# Dev Setup
 
 ## Very first steps
 
