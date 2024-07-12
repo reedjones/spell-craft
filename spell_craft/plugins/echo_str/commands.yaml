@@ -1,0 +1,5 @@
+echo_str:
+  arguments:
+    message:
+      prompt: "Please enter a message"
+      default: "Hello, World!"

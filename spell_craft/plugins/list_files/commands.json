@@ -1,0 +1,10 @@
+{
+  "list_files": {
+      "arguments": {
+          "directory": {
+              "prompt": "Please enter the directory",
+              "default": "."
+          }
+      }
+  }
+}
